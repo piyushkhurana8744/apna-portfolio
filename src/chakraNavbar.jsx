@@ -28,8 +28,15 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import { useContext } from 'react';
+import { contextapi } from './Contextapi';
   
   export default function ChakraNavbar() {
+    const {change,logout}=useContext(contextapi)
+    const handleToggle=()=>{
+      toggleColorMode()
+      logout()
+    }
     const { isOpen, onToggle } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
 
@@ -74,7 +81,7 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
             </Flex>
           </Flex>
   
-          <Button onClick={toggleColorMode}>
+          <Button onClick={handleToggle}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
         </Flex>
