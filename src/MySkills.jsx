@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode,Grid,GridItem} from "@chakra-ui/react"
-import {SiExpress} from "react-icons/si"
+import {Box,Text,Image, Flex,Button,Center,useColorMode,Grid,GridItem} from "@chakra-ui/react"
 const Myskills = () => {
   const { colorMode} = useColorMode()
   const skillsarr=[

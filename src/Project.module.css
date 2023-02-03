@@ -1,4 +1,3 @@
-
 .intro{
     display: flex;
     align-items: center;
@@ -9,10 +8,10 @@
     margin-top: 50px;
 }
 .mid_sec{
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
-    gap: 20px;
+    text-align: center;
 }
 .child{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -23,9 +22,9 @@
    
 }
 .proName{
-   margin: 5px 0px 5px 0px ;
+   margin-top: 2px;
    color: blue;
-   font-size: 20px;
+   font-size: 25px;
    font-weight: bold;
 }
 .techStack{
@@ -34,9 +33,8 @@
     font-weight: bold;
  }
 .proPara{
-    font-size: 12px;
-    
-    padding: 2px;
+    font-size: 14px;
+    padding:5px;
 }
 .icons{
     font-size: 25px;
