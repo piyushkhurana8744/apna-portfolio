@@ -1,170 +1,121 @@
-import {
-    Container,
-    Flex,
-    Box,
-    Heading,
-    Text,
-    IconButton,
-    Button,
-    VStack,
-    HStack,
-    Wrap,
-    WrapItem,
-    FormControl,
-    FormLabel,
-    Input,
-    InputGroup,
-    InputLeftElement,
-    Textarea,Center
-  } from '@chakra-ui/react';
-  import {
-    MdPhone,
-    MdEmail,
-    MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail,
-    
-  } from 'react-icons/md';
-  import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
-  
-  export default function Contact() {
-    return (
-      <Container  maxW="full" mt={0} centerContent overflow="hidden">
-        <Flex>
-          <Box
-            bg=""
-            color=""
-            border={"none"}
+import { Box,Flex,Text,IconButton,Heading,FormControl,Input,FormLabel, Link,Textarea,Button} from "@chakra-ui/react"
+import React from 'react'
+import styles from '../Css-modules/contact.module.css';
+import { BsGithub, BsLinkedin, BsPerson, BsWhatsapp,BsInstagram  } from 'react-icons/bs';
+import { MdEmail} from 'react-icons/md';
+const Contact = () => {
+  return (
+    <Flex  boxShadow= "0px 1px 5px 1px gray" flexDirection="column"mt={"10px"} gap={{base:"10",lg:""}}>
+      <Heading mt="10">Let's get in touch...</Heading>
+      <Flex justifyContent={"center"} align="center" flexDirection={{base:"column",lg:"row"}} gap="10" height="" >
+            {/* Left box */}
+            <Flex gap="5" flexDirection={"column"} justifyContent="center">
 
-            boxShadow="0px 1px 5px 1px #E0E0E0"
-            borderRadius="lg"
-            m={{ sm: 4, md: 16, lg: 10 }}
-            p={{ sm: 5, md: 5, lg: 16 }}>
-            <Box p={4}>
-              <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
-                <WrapItem>
-                  <Box>
-                    <Heading >Contact </Heading>
-                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                      Fill up the form below to contact
-                    </Text>
-                    <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                      <VStack pl={0} spacing={3} alignItems="flex-start">
-                        <Button
-                          size="md"
-                          height="48px"
-                          width="200px"
-                          variant="ghost"
-                          color=""
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                          +91-988888888
-                        </Button>
-                        <Button
-                          size="md"
-                          height="48px"
-                          width="200px"
-                          variant="ghost"
-                          color=""
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                          hello@abc.com
-                        </Button>
-                        <Button
-                          size="md"
-                          height="48px"
-                          width="200px"
-                          variant="ghost"
-                          color=""
-                          _hover={{ border: '2px solid #1C6FEB' }}
-                          leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                          Karnavati, India
-                        </Button>
-                      </VStack>
-                    </Box>
-                    <HStack
-                      mt={{ lg: 10, md: 10 }}
-                      spacing={5}
-                      px={5}
-                      alignItems="flex-start">
-                      <IconButton
-                        aria-label="facebook"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ color:"white", bg: '#0D74FF' }}
-                        icon={<MdFacebook size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ color:"white",bg: '#0D74FF' }}
-                        icon={<BsGithub size="28px" />}
-                      />
-                      <IconButton
-                        aria-label="discord"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ color:"white", bg: '#0D74FF' }}
-                        icon={<BsDiscord size="28px" />}
-                      />
-                    </HStack>
-                  </Box>
-                </WrapItem>
-                <WrapItem>
-                  <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
-                      <VStack spacing={5}>
-                        <FormControl id="name">
-                          <FormLabel>Your Name</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<BsPerson color="gray.800" />}
-                            />
-                            <Input type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
-                          <InputGroup borderColor="#E0E1E7">
-                            <InputLeftElement
-                              pointerEvents="none"
-                              children={<MdOutlineEmail color="gray.800" />}
-                            />
-                            <Input type="text" size="md" />
-                          </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
-                          <Textarea
-                            borderColor="gray.300"
-                            _hover={{
-                              borderRadius: 'gray.300',
-                            }}
-                            placeholder="message"
-                          />
-                        </FormControl>
-                        <FormControl id="name" float="right">
-                          <Button
-                            variant="solid"
-                            bg="#0D74FF"
-                            color="white"
-                            _hover={{}}>
-                            Send Message
-                          </Button>
-                        </FormControl>
-                      </VStack>
-                    </Box>
-                  </Box>
-                </WrapItem>
-              </Wrap>
-            </Box>
-          </Box>
-        </Flex>
-      </Container>
-    );
-  }
+                    {/* Whatsapp */}
+                    <Flex align="center">
+                    <Link href="https://wa.me/+918700644828?text=I%27m%20interested%20in%20your%20profile">
+                    <IconButton aria-label="email"
+                        variant="ghost"size="lg"
+                          fontSize="3xl"
+                          icon={<BsWhatsapp/>}
+                          
+                          _hover={{
+                            bg: 'blue.500',
+                            color:"white"
+                          }}
+                          
+                          isRound
+                        />
+                        </Link>
+                        <Text>+918700644828</Text>
+                    </Flex>
+                      {/* Mail */}
+                      <Flex align="center" >
+                      <Link href="mailto:someone@example.com">
+                      <IconButton aria-label="email"
+                        variant="ghost"size="lg"
+                          fontSize="3xl"
+                          icon={<MdEmail />}
+                          _hover={{
+                            bg: 'blue.500',
+                            color:"white"
+                          }}
+                          
+                          isRound
+                        /></Link>
+                        <Link href="mailto:someone@example.com">prashantxi786@gmail.com</Link>
+                      </Flex>
+
+                      {/* github */}
+                      <Flex align="center">
+                      <Link href="https://github.com/prashantxi786">
+                      <IconButton aria-label="email"
+                        variant="ghost"size="lg"
+                          fontSize="3xl"
+                          icon={<BsGithub />}
+                          _hover={{
+                            bg: 'blue.500',
+                            color:"white"
+                          }}
+                          
+                          isRound
+                        />
+                      </Link>
+                        <Link href="https://github.com/prashantxi786">prashantxi786</Link>
+                      </Flex>
+
+                      {/* Linkedin */}
+                      <Flex align="center">
+                      <Link href="https://www.linkedin.com/in/prashant-s-428990148/">
+                      <IconButton aria-label="email"
+                        variant="ghost"size="lg"
+                          fontSize="3xl"
+                          icon={<BsLinkedin />}
+                          _hover={{
+                            bg: 'blue.500',
+                            color:"white"
+                          }}
+                          
+                          isRound
+                        /></Link>
+                        <Link href="https://www.linkedin.com/in/prashant-s-428990148/">linkedin/prashantxi786</Link>
+                      </Flex>
+
+                      {/* Instagram */}
+                      <Flex align="center">
+                      <Link href="https://www.instagram.com/Prashant_blessed11/">
+                      <IconButton aria-label="email"
+                        variant="ghost"size="lg"
+                          fontSize="3xl"
+                          icon={<BsInstagram />}
+                          _hover={{
+                            bg: 'blue.500',
+                            color:"white"
+                          }}
+                          
+                          isRound
+                        />
+                        </Link>
+                        <Link href="https://www.instagram.com/Prashant_blessed11/">Prashant_blessed11</Link>
+                      </Flex>
+                      
+            </Flex>
+            {/* RightBox */}
+            <Flex align="center" width="" >
+                  <FormControl isRequired>
+                    <FormLabel>Email I'd</FormLabel>
+                    <Input placeholder="Email"/>
+                    <FormLabel>First name</FormLabel>
+                    <Input placeholder='First name' />
+                    <FormLabel>Message</FormLabel>
+                    <Textarea type="textArea" placeholder='Enter your Message'/>
+                    <Button mt="5" className={styles.btn} type="submit">Send</Button>
+                  </FormControl>
+            </Flex> 
+      </Flex>
+      {/* <Box border={"1px solid black"} height="50px"></Box> */}
+    </Flex>
+  )
+}
+
+export default Contact
