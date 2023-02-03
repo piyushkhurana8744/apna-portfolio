@@ -8,6 +8,7 @@ import {MdDownload} from "react-icons/md"
 import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
 import Myskills from './MySkills';
+import Githubcalender from './Githubcalender';
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
 {id:3,link:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
@@ -105,6 +106,7 @@ const Homepage = () => {
       </Box>}
       <Aboutme />
       <Myskills />
+      <Githubcalender />
     </div>
   )
 }
