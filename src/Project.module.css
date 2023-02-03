@@ -8,19 +8,11 @@
     margin: auto;
     margin-top: 50px;
 }
-
-.project{
-    font-size: 40px;
-}
-
 .mid_sec{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:auto;
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 30px;
-    gap: 30px;
+    gap: 20px;
 }
 .child{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -28,21 +20,7 @@
 }
 .child:hover{
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
-.btn{
-    border: none;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #001c55;
-    color: white;
-    margin-top: 20px;
-    padding: 5px;
-}
-.btn:hover{
-    cursor: pointer;
-    background-color: white;
-    color: #001c55;
-    border: 1px solid #001c55;
+   
 }
 .proName{
    margin: 5px 0px 5px 0px ;
@@ -50,17 +28,16 @@
    font-size: 20px;
    font-weight: bold;
 }
+.techStack{
+    color: blue;
+    font-size: 17px;
+    font-weight: bold;
+ }
 .proPara{
     font-size: 12px;
     
     padding: 2px;
 }
 .icons{
-    font-size: 20px;
-}
-.icons:hover{
-    font-size: 30px;
-}
-.icons:hover{
     font-size: 25px;
 }
