@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, Heading, useColorMode, useMediaQuery } from '@chakra-ui/react'
+import { background, Box,Button,Grid, GridItem, Heading, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import styles from "./Project.module.css"
 import {BsFillCameraVideoFill,BsFillEyeFill,BsGithub} from "react-icons/bs"
@@ -12,13 +12,14 @@ export const Projects = () => {
     const lightcolor={
         color:"#e53e3e"
     }
+    
   return (
     <Box>
        <Box  className={styles.intro}>
        <Box>
        </Box>
         <Box>
-        <Heading mt="5rem" mb="2rem"> <em style={colorMode=="dark"?darkcolor:lightcolor}>Project</em> <em>Section</em> </Heading>
+        <Heading mt="5rem" mb="2rem"> <em style={colorMode==="dark"?darkcolor:lightcolor}>Project</em> <em>Section</em> </Heading>
         </Box>
        </Box>
        {/* mid-section */}
@@ -35,9 +36,10 @@ export const Projects = () => {
            <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
           
           <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-            <Box className={"styles.icons:hover"}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Box>
-            <Box><a href='https://shimmering-stroopwafel-bf250f.netlify.app/index.html'><BsFillEyeFill /></a></Box>
-            <Box><a href='https://github.com/Kuldeepsingh921/judicious-rice-4024'><BsGithub /></a></Box>
+            <Button  _hover={{ fontSize: '20px',bg:"#e53e3e"}}
+     > <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
+            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://shimmering-stroopwafel-bf250f.netlify.app/index.html'><BsFillEyeFill /></a></Button>
+            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/Kuldeepsingh921/judicious-rice-4024'><BsGithub /></a></Button>
           </Box>
 
         </GridItem>
@@ -51,9 +53,9 @@ export const Projects = () => {
            <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>React Js Chakra UI </p>
           
           <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-          <Box> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Box>
-            <Box><a href='https://spectacular-bombolone-133d78.netlify.app/'><BsFillEyeFill /></a></Box>
-            <Box><a href='https://github.com/Kuldeepsingh921/--hurt-transport-4569/tree/main/mynike'><BsGithub /></a></Box>
+          <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
+            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://spectacular-bombolone-133d78.netlify.app/'><BsFillEyeFill /></a></Button>
+            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/Kuldeepsingh921/--hurt-transport-4569/tree/main/mynike'><BsGithub /></a></Button>
           </Box>
         </GridItem>
         <GridItem className={styles.child}>
@@ -66,9 +68,9 @@ export const Projects = () => {
    <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML, CSS, and JavaScript</p>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-  <Box> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Box>
-    <Box><a href='https://calm-khapse-ebab04.netlify.app/'><BsFillEyeFill /></a></Box>
-    <Box><a href='https://github.com/masai-course/kuldeep_singh_fw21_0501/tree/master/unit-3/sprint-3/day-3/you/YOUTUBE%20APP'><BsGithub /></a></Box>
+  <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://calm-khapse-ebab04.netlify.app/'><BsFillEyeFill /></a></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/masai-course/kuldeep_singh_fw21_0501/tree/master/unit-3/sprint-3/day-3/you/YOUTUBE%20APP'><BsGithub /></a></Button>
   </Box>
         </GridItem>
         <GridItem className={styles.child}>
@@ -81,9 +83,9 @@ export const Projects = () => {
    <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-  <Box> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Box>
-    <Box><a href='https://resplendent-squirrel-f3053d.netlify.app/'><BsFillEyeFill /></a></Box>
-    <Box><a href='https://github.com/Kuldeepsingh921/devout-teeth-4903'><BsGithub /></a></Box>
+  <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://resplendent-squirrel-f3053d.netlify.app/'><BsFillEyeFill /></a></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/Kuldeepsingh921/devout-teeth-4903'><BsGithub /></a></Button>
   </Box>
         </GridItem>
         <GridItem className={styles.child}>
@@ -96,9 +98,9 @@ export const Projects = () => {
    <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-    <Box><BsFillCameraVideoFill /></Box>
-    <Box><BsFillEyeFill /></Box>
-    <Box><BsGithub /></Box>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillEyeFill /></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsGithub /></Button>
   </Box>
         </GridItem>
         <GridItem className={styles.child}>
@@ -111,9 +113,9 @@ export const Projects = () => {
    <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
-    <Box><BsFillCameraVideoFill /></Box>
-    <Box><BsFillEyeFill /></Box>
-    <Box><BsGithub /></Box>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillEyeFill /></Button>
+    <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsGithub /></Button>
         </Box>
        </GridItem>
        
