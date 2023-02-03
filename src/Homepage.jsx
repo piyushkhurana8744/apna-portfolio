@@ -44,7 +44,7 @@ const Homepage = () => {
         <Box style={{fontSize:"25px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
   options={{
-    strings: ["I'm passionate Full Stack Web Developer"],
+    strings: ["A passionate Full Stack Web Developer"],
     autoStart: true,
     loop: true,
   }}
