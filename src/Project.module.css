@@ -45,12 +45,14 @@
     border: 1px solid #001c55;
 }
 .proName{
-   margin-top: -5px;
+   margin: 5px 0px 5px 0px ;
    color: blue;
+   font-size: 20px;
+   font-weight: bold;
 }
 .proPara{
     font-size: 12px;
-    margin-top: -10px;
+    
     padding: 2px;
 }
 .icons{
