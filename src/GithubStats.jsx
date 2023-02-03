@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode, color} from "@chakra-ui/react"
+import {Box,Text,Image, Flex,Center,useColorMode} from "@chakra-ui/react"
 const GithubStats = () => {
     const { colorMode} = useColorMode()
     const darkcolor={
@@ -15,8 +15,8 @@ const GithubStats = () => {
            <Text fontSize={"20px"}>My overall statistics and contribution</Text>
           <Center>
           <Flex gap="30px" marginTop="20px">
-            {colorMode=="dark"?<Image src="https://github-stats-alpha.vercel.app/api?username=piyushkhurana8744&cc=000&tc=fff&ic=fff&bg=fff"></Image>:<Image src="https://github-stats-alpha.vercel.app/api?username=piyushkhurana8744"></Image>}
-           {colorMode=="dark"?<Image src="https://github-readme-streak-stats.herokuapp.com?user=piyushkhurana8744&theme=dark&hide_border=true"></Image>:<Image src="https://github-readme-streak-stats.herokuapp.com?user=piyushkhurana8744&hide_border=false"></Image>}
+            {colorMode=="dark"?<Image src="https://github-stats-alpha.vercel.app/api?username=Kuldeepsingh921&cc=000&tc=fff&ic=fff&bg=fff"></Image>:<Image src="https://github-stats-alpha.vercel.app/api?username=Kuldeepsingh921"></Image>}
+           {colorMode=="dark"?<Image src="https://github-readme-streak-stats.herokuapp.com?user=Kuldeepsingh921&theme=dark&hide_border=true"></Image>:<Image src="https://github-readme-streak-stats.herokuapp.com?user=piyushkhurana8744&hide_border=false"></Image>}
             
             </Flex></Center> 
         </Box>
