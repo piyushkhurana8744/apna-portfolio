@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
-const Aboutme = () => {
+ const Aboutme = () => {
     const { colorMode} = useColorMode()
     const darkcolor={
        color:"#6d28d9"
