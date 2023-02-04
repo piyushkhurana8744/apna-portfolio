@@ -2,7 +2,6 @@ import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode, color} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 import GithubStats from './GithubStats'
 const Githubcalender = () => {
@@ -15,7 +14,7 @@ const Githubcalender = () => {
         color:"#e53e3e"
     }
   return (
-    <div>
+    <div data-aos="fade-up-right">
       {isLargerThan800? <Box marginTop="20px">
         <Text fontSize={{base:"18px",md:"23px",lg:"28px"}} fontWeight="Bold">GITHUB CONTRIBUTION <span style={colorMode=="dark"?darkcolor:lightcolor}>CALENDER</span> </Text>
         <Box marginTop="20px">

@@ -11,8 +11,8 @@ import { useMediaQuery } from '@chakra-ui/react'
     }
     const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
   return (
-    <div >
-      {isLargerThan800?<Box style={{marginTop:"30px",paddingBottom:"70px"}}>
+    <div data-aos="fade-up-right">
+      {isLargerThan800?<Box style={{marginTop:"30px",paddingBottom:"70px"}} >
       <Text fontSize={"30px"} fontWeight="bold">All <span style={colorMode=="dark"?darkcolor:lightcolor}>About</span> Me</Text>
       <Flex width="90%" margin="auto" marginTop="20px">
         <Box width="50%">
