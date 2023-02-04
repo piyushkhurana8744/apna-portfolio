@@ -119,7 +119,7 @@ const Myskills = () => {
       setSkillarr(arr)
     }
   return (
-    <div  id="skills">
+    <div id="skills" data-aos="fade-up-right">
       <Box style={colorMode === 'light'?mainbox:truebox}>
         <Text fontSize={"30px"} fontWeight="bold">My <span style={colorMode==="dark"?darkcolor:lightcolor}>Skills</span> </Text>
         <Center>

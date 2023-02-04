@@ -34,10 +34,11 @@ const Homepage = () => {
   }
   return (
     <div id="about">
-      {isLargerThan800?<Box mt="10" style={colorMode === 'light'?mainbox:truebox}>
+      {isLargerThan800?<div style={colorMode === 'light'?mainbox:truebox} data-aos="fade-up-right">
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
-      <Box width="50%" margin="auto">
-        <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Prashant Singh</Text>
+
+      <Box width="50%" margin="auto" data-aos="fade-right">
+        <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Piyush Khurana</Text>
         <Box style={{fontSize:"25px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
   options={{
@@ -66,7 +67,7 @@ const Homepage = () => {
           <Image src="https://i.postimg.cc/c44cMrvP/IMG-20180417-103044-HDR-1.jpg" borderRadius={"50%"} width="300px"></Image>
         </Box>
      </Flex>
-      </Box>:<Box style={colorMode === 'light'?mainbox:truebox}>
+      </div>:<Box style={colorMode === 'light'?mainbox:truebox}>
       <Center><Box>
       <Image src="https://i.postimg.cc/c44cMrvP/IMG-20180417-103044-HDR-1.jpg" borderRadius={"50%"} width="200px"></Image>
      </Box>

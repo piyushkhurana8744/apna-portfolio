@@ -11,7 +11,7 @@ const GithubStats = () => {
         color:"#e53e3e"
     }
   return (
-    <div>
+    <div data-aos="fade-up-right">
       {isLargerThan800?<Box marginTop="20px">
         <Text fontSize={{base:"18px",md:"23px",lg:"28px"}} fontWeight="Bold">GITHUB <span style={colorMode=="dark"?darkcolor:lightcolor}> STATISTICS</span> </Text>
            <Text fontSize={"20px"}>My overall statistics and contribution</Text>
