@@ -8,7 +8,7 @@ import {MdDownload} from "react-icons/md"
 import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
 import Myskills from './MySkills';
-import Githubcalender from './Githubcalender';
+import Githubcalender from "./Githubcalender"
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
 {id:3,link:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
@@ -23,7 +23,6 @@ const Homepage = () => {
   const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
   const { colorMode} = useColorMode()
   console.log(colorMode)
-  const {change}=useContext(contextapi)
  
   const mainbox={
     backgroundColor:"#dff4ff",
@@ -40,11 +39,11 @@ const Homepage = () => {
       {isLargerThan800?<Box style={colorMode === 'light'?mainbox:truebox}>
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
       <Box width="50%" margin="auto">
-        <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Piyush Khurana</Text>
+        <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Prashant Singh</Text>
         <Box style={{fontSize:"25px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
   options={{
-    strings: ["I'm passionate Full Stack Web Developer"],
+    strings: ["I'm a growth-oriented Full Stack Web Developer."],
     autoStart: true,
     loop: true,
   }}
@@ -75,13 +74,13 @@ const Homepage = () => {
      </Box>
      </Center>
      <Box marginTop="20px">
-     <Text style={{fontSize:"20px",fontWeight:'Bold'}}>Hello, I'm Piyush Khurana</Text>
+     <Text style={{fontSize:"20px",fontWeight:'Bold'}}>Hello, I'm Prashant Singh</Text>
      <Box style={{fontSize:"16px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
-  options={{
-    strings: ["I'm passionate Full Stack Web Developer"],
-    autoStart: true,
-    loop: true,
+            options={{
+              strings: ["A passionate Full Stack Web Developer."],
+              autoStart: true,
+              loop: true,
   }}
 /></Box>
      </Box>

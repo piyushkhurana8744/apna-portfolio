@@ -1,8 +1,7 @@
 import React from 'react'
-import GitHubCalendar from 'react-github-calendar'
+import GitHubCalendar from "react-github-calendar"
 import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode, color} from "@chakra-ui/react"
-import { Tooltip as ReactTooltip } from 'react-tooltip'
-import GithubStats from './GithubStats'
+import GithubStats from "./GithubStats"
 const Githubcalender = () => {
     const { colorMode} = useColorMode()
     const darkcolor={
@@ -16,7 +15,7 @@ const Githubcalender = () => {
         <Box marginTop="20px">
         <Text fontSize={{base:"18px",md:"23px",lg:"28px"}} fontWeight="Bold">GITHUB CONTRIBUTION <span style={colorMode=="dark"?darkcolor:lightcolor}>CALENDER</span> </Text>
         <Box marginTop="20px">
-        <Center><GitHubCalendar username="piyushkhurana8744" blockSize={16} blockMargin={6}/></Center>
+        <Center><GitHubCalendar username="prashantxi786" blockSize={16} blockMargin={6}/></Center>
         </Box>
         <GithubStats />
         </Box>

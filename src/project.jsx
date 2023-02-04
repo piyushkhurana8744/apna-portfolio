@@ -24,7 +24,7 @@ export const Projects = () => {
        </Box>
        {/* mid-section */}
        
-       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}}
+       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}} gap="40"
        
        >
         <GridItem className={styles.child}>
