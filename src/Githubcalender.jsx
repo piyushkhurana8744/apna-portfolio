@@ -2,7 +2,6 @@ import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode, color} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 import GithubStats from './GithubStats'
 const Githubcalender = () => {
