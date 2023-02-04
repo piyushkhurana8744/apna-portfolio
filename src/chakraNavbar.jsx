@@ -18,7 +18,7 @@ import {
     useDisclosure,Link
   } from '@chakra-ui/react';
 import AOS from 'aos';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink  } from 'react-router-hash-link';
 import React from 'react'
 import 'aos/dist/aos.css';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -45,7 +45,7 @@ import { contextapi } from './Contextapi';
       AOS.init();
     }, [])
     return (
-      <Box pos="fixed" width="100%" top="0" boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
+      <Box style={colorMode==="dark"?{bgColor:"#1e262b"}:{bgColor:"#f2fffe"}} zIndex="5" pos="fixed" width="100%" top="0" boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}

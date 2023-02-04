@@ -24,11 +24,7 @@ export const Projects = () => {
 
 
     <Box id="projects" style={colorMode === 'light'?mainbox:truebox}>
-       <Box  className={styles.intro} data-aos="fade-up-right">
-
-       <Box>
-       
-      
+       <Box  className={styles.intro} data-aos="fade-up-right" data-aos-duration="3000">
         <Box>
         <Heading mt="5rem" mb="2rem"> <em style={colorMode==="dark"?darkcolor:lightcolor}>Project</em> <em>Section</em> </Heading>
         </Box>
