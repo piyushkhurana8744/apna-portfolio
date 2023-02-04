@@ -1,4 +1,4 @@
-import { background, Box,Button,Grid, GridItem, Heading, useColorMode } from '@chakra-ui/react'
+import {Box,Button,Grid, GridItem, Heading,Text, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import styles from "./Project.module.css"
 import {BsFillCameraVideoFill,BsFillEyeFill,BsGithub} from "react-icons/bs"
@@ -24,18 +24,18 @@ export const Projects = () => {
        </Box>
        {/* mid-section */}
        
-       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}}
+       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}} gap="60px"
        
        >
         <GridItem className={styles.child}>
           <img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src="https://cdn.dribbble.com/users/4400366/screenshots/15917760/media/21dd5982b34f1e95353b3a8089862f83.png?compress=1&resize=400x300" alt="expedia" />
            <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >Expedia</h2>
 
-           <p className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</p>
+           <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-           <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
+           <Text style={{fontSize:"14px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
           
-          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",fontSize:"20px",marginTop:"15px"}}>
             <Button  _hover={{ fontSize: '20px',bg:"#e53e3e"}}
      > <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
             <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://shimmering-stroopwafel-bf250f.netlify.app/index.html'><BsFillEyeFill /></a></Button>
@@ -48,11 +48,11 @@ export const Projects = () => {
 
         <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >Nike</h2>
 
-           <p className={styles.proPara}>Nike, Inc. is an American multinational corporation that is engaged in the design, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.</p>
+           <Text className={styles.proPara}>Nike, Inc. is an American multinational corporation that is engaged in the design, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.</Text>
 
-           <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>React Js Chakra UI </p>
+           <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>React Js Chakra UI </Text>
           
-          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
           <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
             <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://spectacular-bombolone-133d78.netlify.app/'><BsFillEyeFill /></a></Button>
             <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/Kuldeepsingh921/--hurt-transport-4569/tree/main/mynike'><BsGithub /></a></Button>
@@ -63,11 +63,11 @@ export const Projects = () => {
 
 <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >YouTube</h2>
 
-   <p className={styles.proPara}>YouTube is a global online video sharing and social media platform. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim.</p>
+   <Text className={styles.proPara}>YouTube is a global online video sharing and social media platform. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim.</Text>
 
-   <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML, CSS, and JavaScript</p>
+   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML, CSS, and JavaScript</Text>
   
-  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
   <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://calm-khapse-ebab04.netlify.app/'><BsFillEyeFill /></a></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/masai-course/kuldeep_singh_fw21_0501/tree/master/unit-3/sprint-3/day-3/you/YOUTUBE%20APP'><BsGithub /></a></Button>
@@ -78,11 +78,11 @@ export const Projects = () => {
 
 <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor}>Toggle Track</h2>
 
-   <p className={styles.proPara}>Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. </p>
+   <Text className={styles.proPara}>Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. </Text>
 
-   <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
+   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
-  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
   <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://resplendent-squirrel-f3053d.netlify.app/'><BsFillEyeFill /></a></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/Kuldeepsingh921/devout-teeth-4903'><BsGithub /></a></Button>
@@ -93,11 +93,11 @@ export const Projects = () => {
 
    <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor}>Expedia</h2>
 
-   <p className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</p>
+   <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-   <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
+   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
-  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillEyeFill /></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsGithub /></Button>
@@ -108,11 +108,11 @@ export const Projects = () => {
 
 <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor}>Expedia</h2>
 
-   <p className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</p>
+   <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-   <p style={{fontSize:"12px",marginTop:"5px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</p>
+   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
-  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"20px"}}>
+  <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillEyeFill /></Button>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsGithub /></Button>

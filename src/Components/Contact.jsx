@@ -1,7 +1,7 @@
-import { Box,Flex,Text,IconButton,Heading,FormControl,Input,FormLabel, Link,Textarea,Button} from "@chakra-ui/react"
+import { Flex,Text,IconButton,Heading,FormControl,Input,FormLabel, Link,Textarea,Button} from "@chakra-ui/react"
 import React from 'react'
 import styles from '../Css-modules/contact.module.css';
-import { BsGithub, BsLinkedin, BsPerson, BsWhatsapp,BsInstagram  } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsWhatsapp,BsInstagram  } from 'react-icons/bs';
 import { MdEmail} from 'react-icons/md';
 const Contact = () => {
   return (
