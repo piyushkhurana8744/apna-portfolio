@@ -1,6 +1,5 @@
 .btn {
   --bg: #418babd8;
-  --hover-bg: #d8e7f2;
   --hover-text: #000;
   color: #ffffff;
   border: 1px solid var(--bg);

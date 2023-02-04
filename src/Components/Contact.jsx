@@ -114,7 +114,7 @@ const Contact = () => {
                     <Input placeholder='First name' />
                     <FormLabel>Message</FormLabel>
                     <Textarea type="textArea" placeholder='Enter your Message'/>
-                    <Button mt="5" className={styles.btn} type="submit">Send</Button>
+                    <Button style={colorMode==="light"?{color:"black"}:{color:"white"}} mt="5" className={styles.btn} type="submit">Send</Button>
                   </FormControl>
             </Flex> 
       </Flex>
