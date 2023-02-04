@@ -44,7 +44,7 @@ import { contextapi } from './Contextapi';
       AOS.init();
     }, [])
     return (
-      <Box  boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
+      <Box  className={""} boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -55,11 +55,14 @@ import { contextapi } from './Contextapi';
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}
-          bgColor={colorMode==="light"?"#F2FFFE":"#1E262B"}>
+          bgColor={colorMode==="light"?"#F2FFFE":"#1E262B"}
+          >
+           
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
+            display={{ base: 'flex', md: 'none' }}
+            >
             <IconButton
               onClick={onToggle}
               icon={
@@ -69,7 +72,7 @@ import { contextapi } from './Contextapi';
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'left', md: 'space-between', }}>
+          <Flex  flex={{ base: 1 }} justify={{ base: 'left', md: 'space-between', }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
