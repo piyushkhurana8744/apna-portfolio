@@ -1,21 +1,15 @@
-.intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    gap: 30px;
-    margin: auto;
-    margin-top: 50px;
-}
+
 .mid_sec{
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-top: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .child{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
+    background-color: rgb(80, 221, 246);
 }
 .child:hover{
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -34,8 +28,10 @@
  }
 .proPara{
     font-size: 14px;
-    padding:5px;
+    line-height: 18px;
+    color: rgb(96, 97, 97);
 }
 .icons{
     font-size: 25px;
+    color: bisque;
 }
