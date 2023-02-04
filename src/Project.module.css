@@ -1,6 +1,6 @@
 
 .mid_sec{
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
     text-align: center;
@@ -9,27 +9,30 @@
 .child{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    background-color: rgb(80, 221, 246);
+    padding:10px;
+    padding-bottom: 20px;
 }
 .child:hover{
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
    
 }
 .proName{
-   margin-top: 2px;
+   margin-top: 10px;
    color: blue;
    font-size: 25px;
-   font-weight: bold;
+   font-weight: 500;
 }
 .techStack{
     color: blue;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
+    margin-top: 10px;
  }
 .proPara{
-    font-size: 14px;
-    line-height: 18px;
-    color: rgb(96, 97, 97);
+    font-size: 16px;
+    line-height: 23px;
+    margin-top:10px;
+    font-weight: 500;
 }
 .icons{
     font-size: 25px;

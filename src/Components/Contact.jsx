@@ -10,7 +10,7 @@ const Contact = () => {
   const { colorMode} = useColorMode()
 
   return (
-    <Flex data-aos="fade-up-right" data-aos-duration="3000" id="contact" boxShadow= "0px 1px 5px 1px gray" flexDirection="column"mt={"10px"} gap={{base:"10",lg:""}}>
+    <Flex data-aos="fade-up-right" data-aos-duration="3000" id="contact" boxShadow= "0px 1px 5px 1px gray" flexDirection="column"mt={"10px"} gap={{base:"10",lg:""}} >
       <Heading mt="10">Let's get in touch...</Heading>
       <Flex justifyContent={"center"} align="center" flexDirection={{base:"column",lg:"row"}} gap="10" height="" >
             {/* Left box */}

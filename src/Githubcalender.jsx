@@ -17,7 +17,7 @@ const Githubcalender = () => {
         color:"#e53e3e"
     }
   return (
-    <div data-aos="fade-up-right" data-aos-duration="3000">
+    <div data-aos="fade-up-right" data-aos-duration="3000" style={{paddingBottom:"80px"}}>
       {isLargerThan800? <Box marginTop="20px">
         <Text fontSize={{base:"18px",md:"23px",lg:"28px"}} fontWeight="Bold">GITHUB CONTRIBUTION <span style={colorMode=="dark"?darkcolor:lightcolor}>CALENDER</span> </Text>
         <Box marginTop="20px">
