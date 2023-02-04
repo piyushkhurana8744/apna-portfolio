@@ -14,7 +14,7 @@ export const Projects = () => {
     }
     
   return (
-    <Box>
+    <Box id="projects">
        <Box  className={styles.intro}>
        <Box>
        </Box>

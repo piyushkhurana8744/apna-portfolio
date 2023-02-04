@@ -119,9 +119,9 @@ const Myskills = () => {
       setSkillarr(arr)
     }
   return (
-    <div>
+    <div  id="skills">
       <Box style={colorMode === 'light'?mainbox:truebox}>
-        <Text fontSize={"30px"} fontWeight="bold">My <span style={colorMode=="dark"?darkcolor:lightcolor}>Skills</span> </Text>
+        <Text fontSize={"30px"} fontWeight="bold">My <span style={colorMode==="dark"?darkcolor:lightcolor}>Skills</span> </Text>
         <Center>
         <Flex gap="20px" marginTop="20px">
         <Button style={colorMode=="dark"?buttondark:buttonlight} onClick={()=>setSkillarr(skillsarr)}>All</Button>

@@ -33,8 +33,8 @@ const Homepage = () => {
     backgroundColor:"#050402"
   }
   return (
-    <div>
-      {isLargerThan800?<Box style={colorMode === 'light'?mainbox:truebox}>
+    <div id="about">
+      {isLargerThan800?<Box mt="10" style={colorMode === 'light'?mainbox:truebox}>
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
       <Box width="50%" margin="auto">
         <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Prashant Singh</Text>
