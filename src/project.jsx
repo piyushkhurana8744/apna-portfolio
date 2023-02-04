@@ -14,7 +14,7 @@ export const Projects = () => {
     }
     
   return (
-    <Box>
+    <Box id="projects">
        <Box  className={styles.intro} data-aos="fade-up-right">
        <Box>
        </Box>

@@ -1,8 +1,9 @@
 .navbutton {
     border: none;
     border-radius: 5px;
+    padding: 0.2em ;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     color: #2c9caf;
     transition: all 1000ms;

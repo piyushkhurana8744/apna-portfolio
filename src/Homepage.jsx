@@ -33,7 +33,7 @@ const Homepage = () => {
     backgroundColor:"#050402"
   }
   return (
-    <div>
+    <div id="about">
       {isLargerThan800?<div style={colorMode === 'light'?mainbox:truebox} data-aos="fade-up-right">
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
 
