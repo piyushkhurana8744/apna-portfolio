@@ -12,19 +12,26 @@ export const Projects = () => {
     const lightcolor={
         color:"#e53e3e"
     }
-    
+    const mainbox={
+      backgroundColor:"#dff4ff",
+     
+    }
+    const truebox={
+      
+      backgroundColor:"#050402"
+    }
   return (
-    <Box>
-       <Box  className={styles.intro}>
+    <Box  style={colorMode === 'light'?mainbox:truebox}>
        <Box>
-       </Box>
+       
+      
         <Box>
         <Heading mt="5rem" mb="2rem"> <em style={colorMode==="dark"?darkcolor:lightcolor}>Project</em> <em>Section</em> </Heading>
         </Box>
-       </Box>
+       
        {/* mid-section */}
        
-       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}} gap="60px"
+       <Grid className={styles.mid_sec} templateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(3,1fr)"}} gap="20px"
        
        >
         <GridItem className={styles.child}>
@@ -33,9 +40,9 @@ export const Projects = () => {
 
            <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-           <Text style={{fontSize:"14px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
+           <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
           
-          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",fontSize:"20px",marginTop:"15px"}}>
+          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
             <Button  _hover={{ fontSize: '20px',bg:"#e53e3e"}}
      > <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
             <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://shimmering-stroopwafel-bf250f.netlify.app/index.html'><BsFillEyeFill /></a></Button>
@@ -50,7 +57,7 @@ export const Projects = () => {
 
            <Text className={styles.proPara}>Nike, Inc. is an American multinational corporation that is engaged in the design, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.</Text>
 
-           <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>React Js Chakra UI </Text>
+           <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>React Js Chakra UI </Text>
           
           <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
           <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
@@ -65,7 +72,7 @@ export const Projects = () => {
 
    <Text className={styles.proPara}>YouTube is a global online video sharing and social media platform. It was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim.</Text>
 
-   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML, CSS, and JavaScript</Text>
+   <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML, CSS, and JavaScript</Text>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
   <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
@@ -80,7 +87,7 @@ export const Projects = () => {
 
    <Text className={styles.proPara}>Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. </Text>
 
-   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
+   <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
   <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}> <a href="https://www.linkedin.com/in/kuldeep-singh-a50672196/"><BsFillCameraVideoFill /></a> </Button>
@@ -95,7 +102,7 @@ export const Projects = () => {
 
    <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
+   <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
@@ -110,7 +117,7 @@ export const Projects = () => {
 
    <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
 
-   <Text style={{fontSize:"14px",marginTop:"2px"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
+   <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
   
   <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
     <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><BsFillCameraVideoFill /></Button>
@@ -122,6 +129,7 @@ export const Projects = () => {
        </Grid>
          
        
+    </Box>
     </Box>
   )
 }
