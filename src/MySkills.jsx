@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode,Grid,GridItem} from "@chakra-ui/react"
-import {SiExpress} from "react-icons/si"
+import {Box,Text,Image, Flex,Button,Center,useColorMode,Grid,GridItem} from "@chakra-ui/react"
 const Myskills = () => {
   const { colorMode} = useColorMode()
   const skillsarr=[
@@ -132,7 +131,7 @@ const Myskills = () => {
         </Center>
         
       <Grid templateColumns={{base:"repeat(3,1fr)",md:"repeat(5,1fr)",lg:"repeat(8,1fr)"}} width="90%" margin="auto" gap="20px" marginTop="30px">
-        {skillarr.map(el=><GridItem style={colorMode=="dark"?griddark:gridlight}  textAlign="center" >
+        {skillarr.map(el=><GridItem style={colorMode=="dark"?griddark:gridlight}  _hover={{transform:"scale(1.1)",transition:"0.5s"}}  textAlign="center" >
           <Center><Image src={el.image} height={{base:"50px",lg:"70px"}} ></Image></Center>
           <Text fontWeight={{base:"400",lg:"bold"}} marginTop="15px" fontSize={{base:"13px",lg:"17px"}}>{el.name}</Text>
         </GridItem>)}

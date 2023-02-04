@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
-import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode} from "@chakra-ui/react"
-import {FaHandPointRight} from "react-icons/fa"
+import React from 'react'
+import {Box,Text,Image, Flex,Button,Link,Center,useColorMode} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 import Typewriter from 'typewriter-effect';
-import { contextapi } from './Contextapi';
 import {MdDownload} from "react-icons/md"
 import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
