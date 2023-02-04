@@ -1,9 +1,14 @@
-import { Flex,Text,IconButton,Heading,FormControl,Input,FormLabel, Link,Textarea,Button} from "@chakra-ui/react"
+import { Box,Flex,Text,Image ,useColorMode,IconButton,Heading,FormControl,Input,FormLabel, Link,Textarea,Button} from "@chakra-ui/react"
 import React from 'react'
 import styles from '../Css-modules/contact.module.css';
-import { BsGithub, BsLinkedin, BsWhatsapp,BsInstagram  } from 'react-icons/bs';
+import sty from '../Css-modules/footer.module.css';
+import { BsGithub, BsLinkedin, BsPerson, BsWhatsapp,BsInstagram  } from 'react-icons/bs';
 import { MdEmail} from 'react-icons/md';
+
 const Contact = () => {
+
+  const { colorMode} = useColorMode()
+
   return (
     <Flex  boxShadow= "0px 1px 5px 1px gray" flexDirection="column"mt={"10px"} gap={{base:"10",lg:""}}>
       <Heading mt="10">Let's get in touch...</Heading>
@@ -113,7 +118,11 @@ const Contact = () => {
                   </FormControl>
             </Flex> 
       </Flex>
-      {/* <Box border={"1px solid black"} height="50px"></Box> */}
+      {/* Footer */}
+      <Flex align={"center"} fontSize={{base:"12",lg:"17px"}} justify="center" className={colorMode==="light"? sty.lfooter:sty.rfooter} height={"50"}>
+        Made with ❤️ by Prashant Singh © All rights reserved. 2023 
+      </Flex>
+      
     </Flex>
   )
 }
