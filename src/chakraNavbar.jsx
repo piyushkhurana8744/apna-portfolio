@@ -8,20 +8,21 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
+    
     Popover,
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
     useBreakpointValue,
     useColorMode,
-    useDisclosure,
+    useDisclosure,Link
   } from '@chakra-ui/react';
 import AOS from 'aos';
+import { HashLink } from 'react-router-hash-link';
 import React from 'react'
 import 'aos/dist/aos.css';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-
+import styles from "./Css-modules/navbar.module.css"
   import {
     HamburgerIcon,
     CloseIcon,
@@ -44,7 +45,7 @@ import { contextapi } from './Contextapi';
       AOS.init();
     }, [])
     return (
-      <Box boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
+      <Box pos="fixed" width="100%" top="0" boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -54,11 +55,15 @@ import { contextapi } from './Contextapi';
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}>
+          align={'center'}
+          bgColor={colorMode==="light"?"#F2FFFE":"#1E262B"}
+          >
+           
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
+            display={{ base: 'flex', md: 'none' }}
+            >
             <IconButton
               onClick={onToggle}
               icon={
@@ -68,12 +73,12 @@ import { contextapi } from './Contextapi';
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'left', md: 'space-between', }}>
+          <Flex  flex={{ base: 1 }} justify={{ base: 'left', md: 'space-between', }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Image data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true":"https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo1.png?raw=true"}/>
+              <Link href="/"><Image className={styles.logo} data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true":"https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo1.png?raw=true"}/></Link>
             </Text>
   
             <Flex mr="20px" display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" >
@@ -100,12 +105,17 @@ import { contextapi } from './Contextapi';
     return (
       <Stack  display="flex" alignItems="right" direction={'row'} spacing={10}>
         {NAV_ITEMS.map((navItem) => (
-          <Box boxShadow= "1px 1px 0px 1px lightgray" key={navItem.label}>
+          <Box  className={styles.navbutton} boxShadow= "1px 1px 0px 1px lightgray" key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
-                <Link
+                <HashLink
+                  activeClass="active"
+                  to={navItem.href ?? '#'}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   p={2}
-                  href={navItem.href ?? '#'}
                   fontSize={{base:"sm",md:"md",lg:'md'}}
                   fontWeight={500}
                   color={linkColor}
@@ -114,7 +124,7 @@ import { contextapi } from './Contextapi';
                     color: linkHoverColor,
                   }}>
                   {navItem.label}
-                </Link>
+                </HashLink>
               </PopoverTrigger>
   
             </Popover>
@@ -225,19 +235,25 @@ import { contextapi } from './Contextapi';
   
   const NAV_ITEMS = [
     {
+      label: 'Home',
+      href:"/#"
+      
+    },
+    {
       label: 'About me',
+      href:"/#about"
       
     },
     {
       label: 'Skills',
-      
+      href:"/#skills"
     },
     {
       label: 'My Projects',
-      href: '#',
+      href: '/#projects',
     },
     {
       label: 'Contact',
-      href: '#',
+      href: '/#contact',
     },
   ];

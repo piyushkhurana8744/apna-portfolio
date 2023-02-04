@@ -21,7 +21,11 @@ export const Projects = () => {
       backgroundColor:"#050402"
     }
   return (
-    <Box  style={colorMode === 'light'?mainbox:truebox}>
+
+
+    <Box id="projects" style={colorMode === 'light'?mainbox:truebox}>
+       <Box  className={styles.intro} data-aos="fade-up-right">
+
        <Box>
        
       

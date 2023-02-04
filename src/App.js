@@ -3,6 +3,7 @@ import './App.css';
 import Homepage from './Homepage';
 import { Projects } from './project';
 import ChakraNavbar from './chakraNavbar';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <ChakraNavbar />
       <Homepage />
       <Projects />
+      <Contact/>
     </div>
   );
 }

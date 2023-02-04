@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import {Box,Text,Heading,Image, Flex,Button,Wrap,Icon,Link,Center,useColorMode} from "@chakra-ui/react"
-import {FaHandPointRight} from "react-icons/fa"
+import React from 'react'
+import {Box,Text,Image, Flex,Button,Link,Center,useColorMode} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 import Typewriter from 'typewriter-effect';
-import { contextapi } from './Contextapi';
 import {MdDownload} from "react-icons/md"
 import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
+import Myskills from './MySkills';
+import Githubcalender from "./Githubcalender"
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
 {id:3,link:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
@@ -21,7 +21,6 @@ const Homepage = () => {
   const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
   const { colorMode} = useColorMode()
   console.log(colorMode)
-  const {change}=useContext(contextapi)
  
   const mainbox={
     backgroundColor:"#dff4ff",
@@ -34,15 +33,16 @@ const Homepage = () => {
     backgroundColor:"#050402"
   }
   return (
-    <div>
-      {isLargerThan800?<Box style={colorMode === 'light'?mainbox:truebox}>
+    <div id="about">
+      {isLargerThan800?<div style={colorMode === 'light'?mainbox:truebox} data-aos="fade-up-right">
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
-      <Box width="50%" margin="auto">
+
+      <Box width="50%" margin="auto" data-aos="fade-right">
         <Text style={{fontSize:"25px",fontWeight:'Bold'}}>Hello, I'm Piyush Khurana</Text>
         <Box style={{fontSize:"25px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
   options={{
-    strings: ["I'm passionate Full Stack Web Developer"],
+    strings: ["I'm a growth-oriented Full Stack Web Developer."],
     autoStart: true,
     loop: true,
   }}
@@ -67,19 +67,19 @@ const Homepage = () => {
           <Image src="https://i.postimg.cc/c44cMrvP/IMG-20180417-103044-HDR-1.jpg" borderRadius={"50%"} width="300px"></Image>
         </Box>
      </Flex>
-      </Box>:<Box style={colorMode === 'light'?mainbox:truebox}>
+      </div>:<Box style={colorMode === 'light'?mainbox:truebox}>
       <Center><Box>
       <Image src="https://i.postimg.cc/c44cMrvP/IMG-20180417-103044-HDR-1.jpg" borderRadius={"50%"} width="200px"></Image>
      </Box>
      </Center>
      <Box marginTop="20px">
-     <Text style={{fontSize:"20px",fontWeight:'Bold'}}>Hello, I'm Piyush Khurana</Text>
+     <Text style={{fontSize:"20px",fontWeight:'Bold'}}>Hello, I'm Prashant Singh</Text>
      <Box style={{fontSize:"16px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
-  options={{
-    strings: ["I'm passionate Full Stack Web Developer"],
-    autoStart: true,
-    loop: true,
+            options={{
+              strings: ["A passionate Full Stack Web Developer."],
+              autoStart: true,
+              loop: true,
   }}
 /></Box>
      </Box>
@@ -103,6 +103,8 @@ const Homepage = () => {
      </Center>
       </Box>}
       <Aboutme />
+      <Myskills />
+      <Githubcalender />
     </div>
   )
 }
